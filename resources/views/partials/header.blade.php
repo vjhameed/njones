@@ -11,7 +11,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img src="{{ asset('sitefront/log.png') }}" style="height:58px;width:100%" alt=""></a>
+      <a class="navbar-brand" href="/"><img src="{{ asset('sitefront/logo01.png') }}" style="height:43px;width:121px;margin-top:9px ;" alt=""></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
