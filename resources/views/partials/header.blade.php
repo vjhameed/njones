@@ -17,10 +17,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="">HOME</a></li>
+        <li><a href="/">HOME</a></li>
         <li><a href="">ABOUT US</a></li>
-        <li><a href="">WORKSHOPS</a></li>
-        <li><a href="">MEMBERS ONLY</a></li>
+        <li><a href="/workshop">WORKSHOPS</a></li>
         <li><a href="">CONTACT US</a></li>
         <li><a class='signup-btn' href="{{ route('login') }}">SIGN UP</a></li>
       </ul>

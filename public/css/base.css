@@ -1,10 +1,151 @@
 html, body {
   height: 100%;
+  width: 100%;
   font-family: unisanssemiboldbold;
 }
 
 
+#home-section{
+  background: url("../sitefront/home-section.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
 
+#home-section .dark-overlay{
+  background-color: rgba(11, 42, 74, 0.5);
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+.custombtn{
+  margin-bottom: 5em;
+  border-radius: 0;
+  width: 50%;
+}
+
+.custombtn:hover,
+.custombtn.active.focus,
+.custombtn.active:focus,
+.custombtn.focus:active,
+.custombtn:focus {
+  outline: 0 !important;
+  box-shadow: none  !important;
+}
+
+#carousel-workshop{
+  height: 480px;
+}
+
+.carousel-container{
+  visibility: hidden;
+}
+
+.selectlist{
+  margin-top: 5em;
+}
+
+#userchoice{
+  display:inline;
+  width: 60%;
+  height: 48px;
+  /* padding: 1em; */
+  /* color: gray; */
+  font-family: unisansregularregular;
+  font-weight: 200;
+  font-family: unisansregularregular;
+  background-color: #f1f2f2;
+  border-radius: 0px;
+  border: 1px solid #c7c8ca;
+  padding: 1em .9em;
+  margin-bottom: .8em;
+  box-shadow: 4px 3px 3px 0px rgba(100,100,100,.14);
+  font-weight: 100;
+}
+
+#userchoice:focus{
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+#select-label{
+  color: #33A58E;
+  font-size: 1.9em;
+  float: left;
+  padding-top: 6px;
+  font-weight: 200;
+  font-family: unisansregularregular;
+}
+
+.carouselcols{
+  height: 480px;
+  width: 50%;
+  padding: 0px;
+}
+
+.carouselcolsfull{
+  height:480px;
+  width: 100%;
+}
+
+#carousel-workshop .item{
+  width: 100%;
+  height: 480px;
+  /* background: #bbdefb; */
+}
+h3, h2{
+  line-height: 1.5;
+}
+
+.textcontext{
+
+  top:50%;
+  position:relative;
+  transform: translateY(-50%);
+  padding-left: 14px;
+}
+
+#carousel-workshop img{
+  width: 100%;
+  top:50%;
+  position:relative;
+  transform: translateY(-50%);
+}
+
+
+#carousel-workshop li{
+  text-align: left;
+}
+#workshop-head-section{
+  margin-top: 80px;
+  background: url("../sitefront/workshop-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+}
+
+#workshop-head-section .dark-overlay{
+  background-color: rgba(11, 42, 74, 0.5);
+  position: absolute;
+  /* top:100px; */
+  left:0;
+  width: 100%;
+  height: 80%;
+}
+
+#workshop-head-section h1{
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+
+  color:white;
+}
 .mainpic {
   opacity: 1;
   height: 100%;
@@ -50,6 +191,7 @@ html, body {
   font-size: 3.5em;
   color: white;
   padding-right: 1em;
+  padding-top: 250px;
   font-family: unisansregularregular;
 }
 
@@ -264,7 +406,7 @@ button:hover {
     margin-bottom: 3em;
   }
   #ab-text {
-    order: 2
+    order: 2;
   }
   .about-invest-out>div:first-of-type {
     padding: 0px;
@@ -320,5 +462,5 @@ button:hover {
 }
 
 #ab-text{
-  margin-top: 8em
+  margin-top: 3em
 }

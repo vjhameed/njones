@@ -12,55 +12,6 @@
     <link rel="stylesheet" href="{{ asset('css/base.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
-    <style media="screen">
-    .investor-part-main{
-    background-image: url("{{ asset('sitefront/investor-image.jpg') }}");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    }
-
-    .realtor-part-main{
-    background-image: url("{{ asset('sitefront/realtor-image.jpg') }}");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    }
-    .seller-part-main{
-    background-image: url("{{ asset('sitefront/seller-image.jpg') }}");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    }
-    .seller-overlay,.inv-overlay,.rea-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    opacity: 0;
-    background-image: url({{ asset('sitefront/seller-overlay.png') }});
-    transition: opacity .5s ease-in-out;
-    }
-    .seller-overlay2,.inv-overlay2,.rea-overlay2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 11;
-    opacity: 0;
-    background-image: url({{ asset('sitefront/seller-overlay2.png') }});/*dim the background*/
-    transition: opacity .5s ease-in-out;
-    }
-
-    </style>
-
-
 
     @yield('style')
 
@@ -82,6 +33,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="{{ asset('js/parallax.min.js') }}"></script>
     @yield('template_script')
     <script type="text/javascript">
     $('.say-about').parallax({imageSrc: '{{ asset('sitefront/pc1.jpg') }}'});
