@@ -39,13 +39,13 @@ N. Jones Enterprise LLC has provided this information specifically and exclusive
   </div>
 </div>
 
-<div class="col-lg-12 col-xs-12 signup-action">
+{{-- <div class="col-lg-12 col-xs-12 signup-action">
   <div class="">
 
   </div>
   <span>Sign Up to ION</span>
   <button type="button" name="button" class='sign-up-btn'><a href="{{route('register')}}" style='color:white;text-decoration:none'>Sign Up</a> </button>
-</div>
+</div> --}}
 
 
 <div class="col-lg-12 col-xs-12 seller-footer">

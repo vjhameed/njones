@@ -38,47 +38,32 @@ html, body {
 }
 
 #carousel-workshop{
+  margin-top: 2em;
   height: 480px;
+
 }
 
 .carousel-container{
   visibility: hidden;
 }
 
+.list-group-item{
+  font-size: 1.5em;
+}
+
+.carouselcolsfull li{
+  font-size: 1.5em;
+}
+
 .selectlist{
-  margin-top: 5em;
+  margin-top: 50px;
+  /* margin-bottom: 30px; */
+  /* font-size: 2.0em; */
 }
 
 #userchoice{
   display:inline;
   width: 60%;
-  height: 48px;
-  /* padding: 1em; */
-  /* color: gray; */
-  font-family: unisansregularregular;
-  font-weight: 200;
-  font-family: unisansregularregular;
-  background-color: #f1f2f2;
-  border-radius: 0px;
-  border: 1px solid #c7c8ca;
-  padding: 1em .9em;
-  margin-bottom: .8em;
-  box-shadow: 4px 3px 3px 0px rgba(100,100,100,.14);
-  font-weight: 100;
-}
-
-#userchoice:focus{
-  box-shadow: none;
-  border-color: #ccc;
-}
-
-#select-label{
-  color: #33A58E;
-  font-size: 1.9em;
-  float: left;
-  padding-top: 6px;
-  font-weight: 200;
-  font-family: unisansregularregular;
 }
 
 .carouselcols{
@@ -191,7 +176,7 @@ h3, h2{
   font-size: 3.5em;
   color: white;
   padding-right: 1em;
-  padding-top: 250px;
+  padding-top: 5.5em;
   font-family: unisansregularregular;
 }
 
