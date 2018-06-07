@@ -17,10 +17,10 @@
       <div class="home-inner">
         <div class="container">
           <div class="row">
-            <div class="main-text text-left col-lg-offset-1 col-lg-6">
+            <div class="main-text text-left col-lg-offset-1 col-lg-8">
               <div style='line-height:55px'>
                 <span style='font-family:unisansboldbold'>Welcome to ION <br></span>
-                <span style='color:#33a58e; font-family:unisansboldbold'>by N. Jones Enterprise</span>
+                <span style='color:#33a58e; font-family:unisansboldbold'>by Business Development Experts</span>
               </div>
               <a href='#' class="product-show-button">
                     <button>Sign Up</button>

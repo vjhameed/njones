@@ -16,9 +16,14 @@ Route::get('/', function () {
 });
 
 Route::get('/workshop', function () {
-    return view('pages.workshop');
+    if (auth()->user()) {
+        return view('pages.workshop');
+    } else {
+        return redirect('/login')->with('status', 'Please Sign up to access Workshops');
+    }
 });
 
-Auth::routes();
+// email validation routes
+Route::get('/emailV/{token}', 'Auth\RegisterController@verifyUser');
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();

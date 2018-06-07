@@ -7,6 +7,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\VerifyMail;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -23,12 +26,15 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
+
     /**
      * Where to redirect users after registration.
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+
+    protected $redirectTo = '/';
+
 
     /**
      * Create a new controller instance.
@@ -61,12 +67,47 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+
+
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $sec = bcrypt(time());
+        $token = str_replace('/', '', $sec);
+
+        $user = User::create([
+        'name' => $data['name'],
+        'email' => $data['email'],
+        'password' => Hash::make($data['password']),
+        'token' => $token,
+        'verified'=>0
+    ]);
+        Mail::to($user->email)->send(new verifyMail($user));
+
+        return $user;
+    }
+
+    public function verifyUser($token)
+    {
+        $user = User::where('token', $token)->first();
+        if (isset($user)) {
+            if (!$user->verified) {
+                $user->verified = 1;
+                $user->save();
+
+                // Mail::to('approve@siteadviser.com')->send(new adminMail($user->email));
+                $status = "Your e-mail is verified.";
+            } else {
+                $status = "Your e-mail is already verified";
+            }
+        } else {
+            return redirect('/login')->with('warning', "Sorry your email cannot be identified.");
+        }
+        return redirect('/login')->with('status', $status);
+    }
+
+    protected function registered(Request $request, $user)
+    {
+        $this->guard()->logout();
+        return redirect('/login')->with('status', 'Please check your email and ‘SPAM’ folder, and click on the link to verify your email address');
     }
 }

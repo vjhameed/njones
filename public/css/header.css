@@ -69,3 +69,23 @@
   background-color: #0b2a4a;
   border-color: #0b2a4a;
 }
+
+
+.dropdown-menu{
+  width: 50px;
+background: #0b2a4a;
+color: white !important;
+min-width: 111px;
+margin-top: 5px !important;
+padding: .4em 1em;
+font-size: 1.1em;
+}
+
+.dropdown-item{
+  color: white !important;
+  text-decoration: none;
+}
+
+.dropdown-item:hover{
+  text-decoration: none;
+}

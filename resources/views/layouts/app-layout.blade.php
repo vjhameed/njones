@@ -36,7 +36,7 @@
     <script src="{{ asset('js/parallax.min.js') }}"></script>
     @yield('template_script')
     <script type="text/javascript">
-    $('.say-about').parallax({imageSrc: '{{ asset('sitefront/pc1.jpg') }}'});
+    $('.say-about').parallax({imageSrc: '{{ asset('sitefront/disc-background.jpg') }}'});
     </script>
   </body>
 </html>
