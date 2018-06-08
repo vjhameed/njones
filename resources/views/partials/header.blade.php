@@ -22,8 +22,8 @@
         <li><a href="/workshop">WORKSHOPS</a></li>
         <li><a href="/contact">CONTACT US</a></li>
         @guest
-            <li><a class="signup-btn" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-            <li><a class="signup-btn" href="{{ route('register') }}">Sign Up</a></li>
+            <li><a class="signup-btn" href="{{ route('login') }}">LOGIN</a></li>
+            <li><a class="signup-btn" href="{{ route('register') }}">SIGN UP</a></li>
         @else
             <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -34,7 +34,7 @@
                     <a class="dropdown-item" href="{{ route('logout') }}"
                        onclick="event.preventDefault();
                                      document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
+                        LOGOUT }}
                     </a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
