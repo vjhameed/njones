@@ -18,9 +18,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/">HOME</a></li>
-        <li><a href="">ABOUT US</a></li>
+        <li><a href="/about">ABOUT US</a></li>
         <li><a href="/workshop">WORKSHOPS</a></li>
-        <li><a href="">CONTACT US</a></li>
+        <li><a href="/contact">CONTACT US</a></li>
         @guest
             <li><a class="signup-btn" href="{{ route('login') }}">{{ __('Login') }}</a></li>
             <li><a class="signup-btn" href="{{ route('register') }}">Sign Up</a></li>

@@ -15,11 +15,20 @@ Route::get('/', function () {
     return view('pages.index');
 });
 
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
+
 Route::get('/workshop', function () {
     if (auth()->user()) {
         return view('pages.workshop');
     } else {
-        return redirect('/login')->with('status', 'Please Sign up to access Workshops');
+        return redirect('/login')->with('status', 'Please Log in to access Workshops');
     }
 });
 

@@ -21,7 +21,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 75%;
-  background-image: url({{ asset('sitefront/Cover-inner.jpg') }});
+  /* background-image: url({{ asset('sitefront/Cover-inner.jpg') }}); */
   }
   .overlay{
     height: 75%;
@@ -136,27 +136,31 @@
 
 
 {{-- main front image and call to action --}}
-  <div class="mainpic">
-    <div class="container slider-main">
-      <div class="main-text text-right col-lg-offset-6 col-lg-6">
-        <div class="" style='line-height:54px;margin-bottom:-8px'>
-          Get in touch to<br>
-          <span style='color:#33a58e'>Learn More</strong></span>
+<header id="home-section">
+  <div class="dark-overlay">
+    <div class="home-inner">
+      <div class="container">
+        <div class="row">
+          <div class="main-text text-left col-lg-offset-1 col-lg-8">
+            <div style='line-height:55px'>
+              <span style='font-family:unisansboldbold'>Welcome to ION <br></span>
+              <span style='color:#33a58e; font-family:unisansboldbold'>by Business Development Experts</span>
+            </div>
+            <a href='/register' class="product-show-button">
+                  <button>Sign Up</button>
+              </a>
+          </div>
         </div>
-        <a href='{{route('register')}}' class="product-show-button">
-            <button>Sign Up</button>
-        </a>
       </div>
     </div>
-
   </div>
-  <!-- Controls -->
+</header>  <!-- Controls -->
 
   {{-- contact forms start --}}
 
   <div class="contact-main container">
     <div class="col-md-offset-1 col-md-5">
-    <form id="" action="{{ route('contact.send') }}" method="post">
+    <form id="" action="#" method="post">
       {{ csrf_field() }}
       <div class="col-md-10" style="padding:0px">
         <h2>Contact Us</h2>
