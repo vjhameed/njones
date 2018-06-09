@@ -51,7 +51,7 @@ N. Jones Enterprise LLC has provided this information specifically and exclusive
 <div class="col-lg-12 col-xs-12 seller-footer">
   <div class="col-lg-offset-2 col-lg-8 col-xs-12">
     <div class="col-lg-3 col-xs-12" style="padding:0px">
-      <img src="{{ asset('sitefront/blacklog.png') }}" style='margin-left: 15px;width:95px' alt="">
+      <img src="{{ asset('sitefront/logo01.png') }}" style='margin-left: 15px;width:95px;margin-bottom: 20px;' alt="">
       <p class='text-left' style='margin-top:5px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
     </div>
     <div class="col-lg-offset-1 col-lg-2 col-xs-6 text-left">
@@ -83,8 +83,4 @@ N. Jones Enterprise LLC has provided this information specifically and exclusive
       <span>Point 4</span>
     </div>
   </div>
-</div>
-
-<div class="col-lg-12 col-xs-12 f-footer">
-    <p>Copyright 2018</p>
 </div>

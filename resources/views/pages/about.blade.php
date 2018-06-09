@@ -34,9 +34,9 @@
 
   <div class="container about-invest-out">
 
-    <div class="col-lg-offset-2 col-lg-8 col-sm-12">
+    {{-- <div class="col-lg-offset-2 col-lg-8 col-sm-12">
       <h1 class='text-center'>Writing assistance whenever you need it., <br> How Can We Help?</h1>
-    </div>
+    </div> --}}
 
     <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 " id="ab-wrap">
       <div class="col-lg-12 about-invest-text col-sm-6 col-xs-6 text-center" id="ab-text"><span style='color:#2f9784'>About ION</span>
