@@ -25,11 +25,11 @@ Route::get('/about', function () {
 
 
 Route::get('/workshop', function () {
-    if (auth()->user()) {
-        return view('pages.workshop');
-    } else {
-        return redirect('/login')->with('status', 'Please Log in to access Workshops');
-    }
+    // if (auth()->user()) {
+    return view('pages.workshop');
+    // } else {
+        // return redirect('/login')->with('status', 'Please Log in to access Workshops');
+    // }
 });
 
 // email validation routes
